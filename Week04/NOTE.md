@@ -1,16 +1,16 @@
 <h3>第四周学习笔记 </h3>
 <h4>1、深度优先搜索：</h4>
-<p>代码模板：<br/>
-visited = set() <br/>
-def dfs(node, visited):<br/>
-&nbsp;&nbsp;if node in visited: # terminator # already visited<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;return<br/>
-&nbsp;&nbsp;visited.add(node) # process current node here.<br/>
-&nbsp;&nbsp;...<br/>
-&nbsp;&nbsp;for next_node in node.children():<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;if next_node not in visited:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dfs(next_node, visited)<br/>
-</p>
+<pre>代码模板：
+visited = set() 
+def dfs(node, visited):
+    if node in visited: # terminator # already visited
+        return
+    visited.add(node) # process current node here.
+    ...
+    for next_node in node.children():
+       if next_node not in visited:
+           dfs(next_node, visited)
+</pre>
 <h4>2、广度优先搜索：</h4>
 <p><pre>代码模板：
 def BFS(graph, start, end):
